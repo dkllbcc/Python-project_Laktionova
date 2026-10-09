@@ -15,4 +15,5 @@ tens= (number // 10) % 10
 units = number % 10
 
 new_number = tens * 100 + hundreds * 10 + units
+
 print("новое число:", new_number)

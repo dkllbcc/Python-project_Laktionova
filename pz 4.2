@@ -1,0 +1,23 @@
+def calculate_power_sum():
+    print("\n--- Задание 2: Сумма 1^1 + 2^2 + ... + N^N ---")
+    while True:
+        try:
+            n = int(input("Введите целое число N (>0): "))
+            
+            if n <= 0:
+                print("Ошибка: N должно быть больше нуля. Попробуйте снова.")
+                continue
+                
+            total = 0
+            
+            # Считаем сумму
+            for i in range(1, n + 1):
+                total += i ** i
+                
+            print(f"Сумма: {total}")
+            break
+            
+        except ValueError:
+            print("Ошибка: введите целое число, а не буквы. Попробуйте снова.")
+
+# calculate_power_sum() # Раскомментируй для запуска
